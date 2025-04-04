@@ -4,9 +4,7 @@ class Solution:
         gasleft = [0]
         for i in range(len(gas)):
             profit.append(gas[i] - cost[i])
-        for i in range(len(profit)):
-            if i>0:
-                gasleft.append(gasleft[i-1] + profit[i])
+
         x = -1
         j = 0
         gasremain = 0
